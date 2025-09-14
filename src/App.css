@@ -27,3 +27,29 @@
 .gradient {
 background: linear-gradient(to bottom, black 50%, #232323 50%);
 }
+
+/* Glassmorphism Card */
+.glass-card {
+  width: 200px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glassmorphism Buttons */
+.glass-btn {
+  background:#2E2E2E;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.2s ease-in-out;
+}
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

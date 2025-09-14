@@ -43,6 +43,7 @@ const Capabilities = () => {
                     <a href="" className="absolute text-gray-200 right-3 top-3 inline-flex items-center justify-center">learn more <ArrowUpRight size={20} /></a>
                 </div>
             </div>
+            
         </div>
     );
 };
