@@ -1,0 +1,29 @@
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30px);
+  grid-template-rows: repeat(auto-fill, 30px);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Grid squares with thin border */
+.square {
+  width: 30px;
+  height: 30px;
+  background: black;
+  border: 1px solid rgba(63, 62, 62, 0.32);
+  transition: background 1s ease; /* slow fade-out */
+}
+
+/* Hover effect */
+.square:hover {
+  background: #d26de8;
+  transition: background 0.2s ease; /* quick fade-in */
+}
+
+.gradient {
+background: linear-gradient(to bottom, black 50%, #232323 50%);
+}
