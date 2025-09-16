@@ -3,6 +3,8 @@ import Hero from "./components/hero"
 import Capabilities from "./components/capabilities"
 import Works from "./components/works"
 import Architecture from "./components/architecture"
+import Workflow from "./components/workflow"
+import Community from "./components/community"
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <Capabilities />
       <Works />
       <Architecture />
+      <Workflow />
+      <Community />
     </>
   )
 }

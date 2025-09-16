@@ -53,3 +53,20 @@ background: linear-gradient(to bottom, black 50%, #232323 50%);
 .glass-btn:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+    @layer utilities {
+      /* Chrome, Safari, Edge, and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Firefox */
+      .no-scrollbar {
+        scrollbar-width: none;
+      }
+
+      /* Internet Explorer and Edge */
+      .no-scrollbar {
+        -ms-overflow-style: none;
+      }
+    }
