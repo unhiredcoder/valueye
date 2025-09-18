@@ -54,6 +54,7 @@ const ReviewSlider = () => {
   }, [isHovered]);
 
   return (
+    <>
     <section
       className="relative min-h-screen flex flex-col justify-center items-start overflow-hidden w-full 
       bg-black "
@@ -87,14 +88,64 @@ const ReviewSlider = () => {
             className="min-w-[230px] h-fit bg-black bg-opacity-70 text-white p-4 shadow-lg border border-green-500/60"
           >
             <span className="flex items-center justify-start gap-2 p-3">
-            <img src="https://media.istockphoto.com/id/1391718981/photo/portrait-of-a-confident-young-businessman-standing-with-his-arms-crossed-in-an-office.jpg?s=612x612&w=0&k=20&c=eF_0QCtw-Y8Q2c4_xQe6KTkcSPiGCT6qBf6nuavE2Dg=" alt="" className="w-10 h-10 rounded-full"/>
-            <div className=" mb-2 text-sm text-gray-300">{review.name}</div> 
+              <img src="https://media.istockphoto.com/id/1391718981/photo/portrait-of-a-confident-young-businessman-standing-with-his-arms-crossed-in-an-office.jpg?s=612x612&w=0&k=20&c=eF_0QCtw-Y8Q2c4_xQe6KTkcSPiGCT6qBf6nuavE2Dg=" alt="" className="w-10 h-10 rounded-full" />
+              <div className=" mb-2 text-sm text-gray-300">{review.name}</div>
             </span>
             <div className="text-sm">{review.text}</div>
           </div>
         ))}
       </div>
+  
     </section>
+
+        <div className="grid grid-cols-2 h-auto w-3/4 mx-auto border border-gray-400">
+      {/* Left Side */}
+      <div className="grid grid-rows-3">
+        {/* Row 1 */}
+        <div className="flex items-center justify-start">
+          <h1 className="text-white text-[6vw] w-3/4 h-full bg-black font-light leading-none border border-gray-400  flex items-center justify-center">
+            Build
+          </h1>
+        </div>
+
+        {/* Row 2 */}
+        <div className="flex items-center justify-end">
+          <h1 className="text-white text-[6vw] h-full w-3/4 bg-black font-light flex items-center border border-gray-400 justify-center">
+            better
+          </h1>
+        </div>
+
+        {/* Row 3 (split into 2 cols) */}
+        <div className="grid grid-cols-2 h-fit ">
+          {/* Left text */}
+          <div className="flex items-center justify-start   ">
+            <h2 className="text-white text-[4vw] font-light w-screen leading-snug flex items-center justify-center border border-gray-400 border-b-transparent">
+              with <br /> Botpress
+            </h2>
+          </div>
+
+          {/* Right circle button */}
+          <div className="flex items-center justify-center border border-black">
+            <button className="w-42 h-42 rounded-full bg-[#1D3A8A] flex flex-col items-center justify-center hover:bg-[#294dbf] transition">
+              <span className="text-white text-sm">Get started</span>
+              <span className="text-white text-xl">&#8599;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Side */}
+      <div className="flex items-center justify-center bg-white">
+        <img
+          src='https://cdn.prod.website-files.com/635c4eeb78332f7971255095/682391efe465814b90c5ff68_23959dcacb8779e2b3664e2877d793ca_cta.webp'
+          alt="Decorative"
+          className="object-cover h-full w-full"
+        />
+      </div>
+    </div>
+    </>
+
+
   );
 };
 
