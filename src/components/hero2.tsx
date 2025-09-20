@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react"
 
 const capabilities = () => {
     return (
-        <div className="w-screen gradient h-[80vh] flex items-center justify-center mt-20">
+        <div className="w-full gradient h-[80vh] flex items-center justify-center mt-20">
             <div className=" bg-[#E8EBE6] w-5/6 h-3/4 flex flex-wrap">
                 <div className=" relative w-2/4 h-full flex items-center justify-center flex-col gap-15">
                     <span className="absolute right-2 top-2 w-10 h-10 flex items-center justify-center rounded-full"><ArrowUpRight size={30} color="black" /></span>

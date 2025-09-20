@@ -3,9 +3,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
-*{
-  /* border: .1px solid rgb(255, 255, 255); */
-}
+/* *{
+  border: .1px solid rgb(255, 255, 255);
+} */
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

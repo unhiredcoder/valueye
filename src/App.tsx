@@ -6,10 +6,12 @@ import Architecture from "./components/architecture"
 import Workflow from "./components/workflow"
 import Community from "./components/community"
 import Footer from "./components/footer"
+import Navbar from "./components/navbar"
 
 const App = () => {
   return (
     <>
+      <Navbar />
       <Hero />  
       <Hero2 />
       <Capabilities />
