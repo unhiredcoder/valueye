@@ -1,5 +1,3 @@
-// Footer.jsx
-import React from "react";
 import {
   Github,
   Youtube,
@@ -10,10 +8,10 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-12 px-8 border-t border-gray-800 mt-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-10">
+    <footer className="bg-black text-gray-300 py-12 px-6 sm:px-8 border-t border-gray-800 mt-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-8 md:gap-10">
         {/* Left Section */}
-        <div className="md:col-span-2 space-y-6">
+        <div className="md:col-span-2 space-y-6 flex flex-col items-start">
           {/* Logo + Year */}
           <div className="flex items-center space-x-2">
             <div className="bg-white text-black font-bold px-3 py-2 rounded-lg">
@@ -23,7 +21,7 @@ const Footer = () => {
           </div>
 
           {/* Socials */}
-          <div className="flex space-x-5 text-xl">
+          <div className="flex flex-wrap gap-4 text-xl">
             <a href="#" className="hover:text-white">
               <Github size={22} />
             </a>
@@ -43,11 +41,11 @@ const Footer = () => {
         </div>
 
         {/* Links Section */}
-        <div className="md:col-span-4 grid grid-cols-2 md:grid-cols-5 gap-10">
+        <div className="md:col-span-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-10 mt-8 md:mt-0">
           {/* Platform */}
           <div>
             <h3 className="font-semibold mb-3 text-white">Platform</h3>
-            <ul className="space-y-2 text-sm text-gray-400 ">
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>Pricing</li>
               <li>Agent Studio</li>
               <li>Autonomous Engine</li>

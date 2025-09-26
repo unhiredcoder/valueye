@@ -21,39 +21,62 @@
 /* Hover effect */
 .square:hover {
   background: #d26de8;
-  transition: background 0.2s ease; /* quick fade-in */
+  transition: background 0.1s ease; /* quick fade-in */
 }
 
 .gradient {
 background: linear-gradient(to bottom, black 50%, #232323 50%);
 }
 
-/* Glassmorphism Card */
+/* Glass card styles for mobile and desktop */
 .glass-card {
-  width: 200px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  padding: 1rem;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
-/* Glassmorphism Buttons */
 .glass-btn {
-  background:#2E2E2E;
-  border-radius: 8px;
-  padding: 0.5rem 0.75rem;
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 500;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: all 0.2s ease-in-out;
-}
-.glass-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .glass-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Ensure text remains readable */
+.font-stretch-100\% {
+    font-stretch: 100%;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition: all 0.2s ease-in-out;
+}
     @layer utilities {
       /* Chrome, Safari, Edge, and Opera */
       .no-scrollbar::-webkit-scrollbar {
@@ -70,3 +93,17 @@ background: linear-gradient(to bottom, black 50%, #232323 50%);
         -ms-overflow-style: none;
       }
     }
+
+::-webkit-scrollbar {
+  width: 12px;              
+  height: 10px;             
+}
+
+::-webkit-scrollbar-track {
+  background: #29292e;      
+}
+
+::-webkit-scrollbar-thumb {
+  background: #46484f;          
+  border-radius: 0;       
+}

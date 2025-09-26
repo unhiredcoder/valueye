@@ -61,17 +61,16 @@ const ReviewSlider = () => {
     >
       {/* Overlay for readability */}
       <div className="absolute inset-0 bg-black/80 -z-10" />
-
-      {/* Heading and Join Button */}
-      <div className="mb-12 ml-40 max-w-3xl px-12 z-10">
-        <p className="text-gray-400 text-sm mb-2">Community</p>
-        <h1 className="text-white text-[3rem] leading-tight">
-          Join the largest bot building community.
-        </h1>
-        <button className="mt-6 px-8 py-3 rounded-full bg-white text-black font-medium shadow hover:bg-gray-200 transition flex items-center gap-2">
-          Join our discord <span>➜</span>
-        </button>
-      </div>
+    {/* Heading + Button */}
+        <div className="mb-12 ml-6 md:ml-40 max-w-3xl px-6 md:px-12 z-10 text-center md:text-left">
+          <p className="text-gray-400 text-sm mb-2">Community</p>
+          <h1 className="text-white text-2xl md:text-[3rem] leading-tight">
+            Join the largest bot building community.
+          </h1>
+          <button className="mt-6 px-6 md:px-8 py-2 md:py-3 rounded-full bg-white text-black font-medium shadow hover:bg-gray-200 transition flex items-center gap-2 mx-auto md:mx-0">
+            Join our discord <span>➜</span>
+          </button>
+        </div>
 
       {/* Reviews Slider */}
       <div
@@ -97,52 +96,52 @@ const ReviewSlider = () => {
       </div>
   
     </section>
+<div className="grid grid-cols-1 md:grid-cols-2 h-auto w-full md:w-3/4 mx-auto border border-gray-400">
+  {/* Left Side */}
+  <div className="grid grid-rows-3">
+    {/* Row 1 */}
+    <div className="flex items-center justify-center md:justify-start">
+      <h1 className="text-white text-[10vw] md:text-[6vw] w-full md:w-3/4 h-full bg-black font-light leading-none border border-gray-400 flex items-center justify-center">
+        Build
+      </h1>
+    </div>
 
-        <div className="grid grid-cols-2 h-auto w-3/4 mx-auto border border-gray-400">
-      {/* Left Side */}
-      <div className="grid grid-rows-3">
-        {/* Row 1 */}
-        <div className="flex items-center justify-start">
-          <h1 className="text-white text-[6vw] w-3/4 h-full bg-black font-light leading-none border border-gray-400  flex items-center justify-center">
-            Build
-          </h1>
-        </div>
+    {/* Row 2 */}
+    <div className="flex items-center justify-center md:justify-end">
+      <h1 className="text-white text-[10vw] md:text-[6vw] h-full w-full md:w-3/4 bg-black font-light flex items-center border border-gray-400 justify-center">
+        better
+      </h1>
+    </div>
 
-        {/* Row 2 */}
-        <div className="flex items-center justify-end">
-          <h1 className="text-white text-[6vw] h-full w-3/4 bg-black font-light flex items-center border border-gray-400 justify-center">
-            better
-          </h1>
-        </div>
-
-        {/* Row 3 (split into 2 cols) */}
-        <div className="grid grid-cols-2 h-fit ">
-          {/* Left text */}
-          <div className="flex items-center justify-start   ">
-            <h2 className="text-white text-[4vw] font-light w-screen leading-snug flex items-center justify-center border border-gray-400 border-b-transparent">
-              with <br /> Botpress
-            </h2>
-          </div>
-
-          {/* Right circle button */}
-          <div className="flex items-center justify-center border border-black">
-            <button className="w-42 h-42 rounded-full bg-[#1D3A8A] flex flex-col items-center justify-center hover:bg-[#294dbf] transition">
-              <span className="text-white text-sm">Get started</span>
-              <span className="text-white text-xl">&#8599;</span>
-            </button>
-          </div>
-        </div>
+    {/* Row 3 (split into 2 cols) */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 h-fit">
+      {/* Left text */}
+      <div className="flex items-center justify-center md:justify-start">
+        <h2 className="text-white text-[10vw] p-2 sm:text-[4vw] font-light w-full leading-snug flex items-center justify-center border border-gray-400 md:border-b-transparent">
+          with <br /> Botpress
+        </h2>
       </div>
 
-      {/* Right Side */}
-      <div className="flex items-center justify-center bg-white">
-        <img
-          src='https://cdn.prod.website-files.com/635c4eeb78332f7971255095/682391efe465814b90c5ff68_23959dcacb8779e2b3664e2877d793ca_cta.webp'
-          alt="Decorative"
-          className="object-cover h-full w-full"
-        />
+      {/* Right circle button */}
+      <div className="flex items-center justify-center border border-black p-4">
+        <button className="w-24 h-24 sm:w-42 sm:h-42 rounded-full bg-[#1D3A8A] flex flex-col items-center justify-center hover:bg-[#294dbf] transition">
+          <span className="text-white text-xs sm:text-sm">Get started</span>
+          <span className="text-white text-lg sm:text-xl">&#8599;</span>
+        </button>
       </div>
     </div>
+  </div>
+
+  {/* Right Side */}
+  <div className="flex items-center justify-center bg-white">
+    <img
+      src="https://cdn.prod.website-files.com/635c4eeb78332f7971255095/682391efe465814b90c5ff68_23959dcacb8779e2b3664e2877d793ca_cta.webp"
+      alt="Decorative"
+      className="object-cover h-full w-full"
+    />
+  </div>
+</div>
+
     </>
 
 
